@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 # 名称 使用的时候pod search [name]
 s.name = "DOPDropDownMenu-Enhanced"
 # 代码库的版本
-s.version = "1.0.0"
+s.version = "1.0.1"
 # 简介
 s.summary = "DOPDropDownMenu double tableView, The optimization version ，new add image,detailText."
 # 主页
