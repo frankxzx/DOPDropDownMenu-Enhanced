@@ -9,6 +9,7 @@
 
 #import "DOPDropDownMenu.h"
 #import "DOPDropDownMenuDefine.h"
+#import "NSBundle+dropMenu.h"
 
 #define kMarginBetweenImageAndLabel 3
 
@@ -109,7 +110,7 @@
         //_rightTableView.tableFooterView = [[UIView alloc]init];
         
         _buttomImageView = [[UIImageView alloc]initWithFrame:CGRectMake(origin.x, self.frame.origin.y + self.frame.size.height, dropDownViewSize.width, kButtomImageViewHeight)];
-        _buttomImageView.image = [UIImage imageNamed:@"icon_chose_bottom"];
+        _buttomImageView.image = [NSBundle dropMenu_imageNamed:@"icon_chose_bottom"];
         
         //self tapped
         self.backgroundColor = [UIColor whiteColor];
@@ -259,7 +260,7 @@
             if (_dataSourceFlags.imageNameForRowAtIndexPath) {
                 NSString *imageName = [_dataSource menu:self imageNameForRowAtIndexPath:[DOPIndexPath indexPathWithCol:_currentSelectedMenudIndex row:indexPath.row]];
                 if (imageName && imageName.length > 0) {
-                    cell.imageView.image = [UIImage imageNamed:imageName];
+                    cell.imageView.image = [NSBundle dropMenu_imageNamed:imageName];
                 }else {
                     cell.imageView.image = nil;
                 }
@@ -289,7 +290,7 @@
             cell.accessoryView = [_dataSource menu:self accessoryViewForRowAtIndexPath:[DOPIndexPath indexPathWithCol:_currentSelectedMenudIndex row:indexPath.row]];
         } else {
             if (_dataSourceFlags.numberOfItemsInRow && [_dataSource menu:self numberOfItemsInRow:indexPath.row column:_currentSelectedMenudIndex]> 0){
-                cell.accessoryView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"icon_chose_arrow_nor"] highlightedImage:[UIImage imageNamed:@"icon_chose_arrow_sel"]];
+                cell.accessoryView = [[UIImageView alloc]initWithImage:[NSBundle dropMenu_imageNamed:@"icon_chose_arrow_nor"] highlightedImage:[NSBundle dropMenu_imageNamed:@"icon_chose_arrow_sel"]];
             } else {
                 cell.accessoryView = nil;
             }
@@ -304,7 +305,7 @@
                 NSString *imageName = [_dataSource menu:self imageNameForItemsInRowAtIndexPath:[DOPIndexPath indexPathWithCol:_currentSelectedMenudIndex row:currentSelectedMenudRow item:indexPath.row]];
                 
                 if (imageName && imageName.length > 0) {
-                    cell.imageView.image = [UIImage imageNamed:imageName];
+                    cell.imageView.image = [NSBundle dropMenu_imageNamed:imageName];
                 }else {
                     cell.imageView.image = nil;
                 }
@@ -694,7 +695,7 @@
             
             if (self.indicatorImageNames && self.indicatorImageNames.count > i)
             {
-                UIImage *indicatarImage = [UIImage imageNamed:self.indicatorImageNames[i]];
+                UIImage *indicatarImage = [NSBundle dropMenu_imageNamed:self.indicatorImageNames[i]];
                 //更具图片的尺寸来设置frame
                 CGSize imageViewSize = indicatarImage.size;
                 CGRect frame = imageView.frame;
@@ -704,7 +705,7 @@
                 imageView.image = indicatarImage;
             }else
             {
-                imageView.image = [UIImage imageNamed:@"dop_icon_default_indicator"];
+                imageView.image = [NSBundle dropMenu_imageNamed:@"dop_icon_default_indicator"];
             }
             
             [self addSubview:imageView];
