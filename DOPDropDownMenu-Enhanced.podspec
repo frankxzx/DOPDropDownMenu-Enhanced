@@ -15,7 +15,7 @@ s.author = { "tany" => "122074809@qq.com" }
 # 代码库最低支持的版本
 s.platform = :ios, "6.0"
 # 代码的Clone 地址 和 tag 版本
-s.source = { :git => "https://github.com/12207480/DOPDropDownMenu-Enhanced.git" }
+s.source = { :git => "https://github.com/frankxzx/DOPDropDownMenu-Enhanced.git" }
 # 如果使用pod 需要导入哪些资源
 s.source_files = "DOPdemo/DOPDropDownMenu - Enhanced/**/*.{h,m}"
 s.resource_bundles = { 'DOPDropDownMenu' => 'DOPdemo/DOPDropDownMenu-Enhanced.xcassets' }
