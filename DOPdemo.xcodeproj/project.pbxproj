@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		014E7D0B21D348DA00379F07 /* DropMenuBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 014E7D0A21D348DA00379F07 /* DropMenuBaseCell.m */; };
-		014E7D0E21D34FFE00379F07 /* DOPIndexPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 014E7D0D21D34FFE00379F07 /* DOPIndexPath.m */; };
-		014E7D1121D3506800379F07 /* DOPBackgroundCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 014E7D1021D3506800379F07 /* DOPBackgroundCellView.m */; };
 		014E7D1621D35DF800379F07 /* OrderedDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 014E7D1421D35DF800379F07 /* OrderedDictionary.m */; };
 		014E7D6921D468D700379F07 /* NSBundle+dropMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 014E7D6821D468D700379F07 /* NSBundle+dropMenu.m */; };
 		B02288281ABEEDAB00A13A0E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B02288271ABEEDAB00A13A0E /* main.m */; };
@@ -226,6 +223,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -266,12 +264,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				014E7D1121D3506800379F07 /* DOPBackgroundCellView.m in Sources */,
 				014E7D1621D35DF800379F07 /* OrderedDictionary.m in Sources */,
-				014E7D0B21D348DA00379F07 /* DropMenuBaseCell.m in Sources */,
 				B022882E1ABEEDAB00A13A0E /* ViewController.m in Sources */,
 				B0C45C9A1AC18B08006D5D36 /* DOPDropDownMenu.m in Sources */,
-				014E7D0E21D34FFE00379F07 /* DOPIndexPath.m in Sources */,
 				B022882B1ABEEDAB00A13A0E /* AppDelegate.m in Sources */,
 				014E7D6921D468D700379F07 /* NSBundle+dropMenu.m in Sources */,
 				B02288281ABEEDAB00A13A0E /* main.m in Sources */,
